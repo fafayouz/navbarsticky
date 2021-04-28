@@ -1,118 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
 body {
-    margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
 }
-.Login-Form-Container {
+.Container {
     width: 100%;
     height: 100vh;
-    background-image: url(./space.jpg)   ;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+.navbar-container {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    transition: 0.3s ;
+    position: absolute;
+    z-index: 99;
+}
+.navbar-logo {
+    width: 20%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
 }
-.Login-Form {
-    width: 60%;
-    height: 60%;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    
-}
-.Form-Container {
+.navbar {
     width: 60%;
     height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-}
-.Form-title {
-    width: 50%;
-    height: 20%;
-    display: flex;
     align-items: center;
-    font-size: 2.5rem;
-    font-weight: bolder;
-    padding-left: 4rem;
-}
-.Form {
-    width: 85%;
-    height: 65%;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    padding-left: 4rem;
 }
-.Form--div {
-    display: flex;
-    flex-direction: column;
+.items {
+    padding: 1rem 2rem;
+    
 }
-.form__input {
-    width: 40%;
-    outline: none;
-    padding: 0.7rem;
-    border-radius: 0.2rem;
-    border: 1px solid #0B2560;
-}
-.form__label {
-    font-weight: 600;
-}
-.Form--div span {
-    font-size: small;
-    font-weight: 600;
-    color: rgb(1, 60, 99);
-    cursor: pointer;
-}
-.Form--div span:hover {
-    color: black;
-}
-.Form-Submit {
-    width: 80%;
-    height: 15%;
-    background-color: #0b2560;
-    border-radius: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.items a {
+    text-decoration: none;
     color: white;
-    cursor: pointer;
-    transition: all 0.3s linear;
+    font-weight: 600;
 }
-.Form-Submit:hover {
-    background-color: white;
-    background-color: #FE3150;
-}
-.image-Form-Container {
-    width: 39%;
+.image-background {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
-
-
-@media only screen and (max-width: 600px){
-    .Login-Form {
-        width: 100%;
-        height: 70%;
-
-    }
-    .form__input {
-        width: 60%;
-        outline: none;
-        padding: 0.7rem;
-        border-radius: 0.2rem;
-        border: 1px solid #0B2560;
-    }
-    .Form-Submit {
-        font-size: 0.9rem;
-    }
-    .form__label {
-        font-weight: 600;
-        font-size: 0.9rem;
-    }
-    .Form--div span {
-        font-size: 0.65rem;
-    }
+.image-background img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.Navbarsticky {
+    width: 100%;
+    height: 4rem;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    position: fixed;
+    transition: 0.3s cubic-bezier(1, 0, 0, 1);
+    z-index: 99;
+}
+.services-container {
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+  
 }
